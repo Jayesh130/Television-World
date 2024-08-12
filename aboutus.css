@@ -1,0 +1,429 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0px;
+    padding: opx;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+/*customizing the nav bar*/
+nav{
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 110px;
+    padding: 0px 0px;
+   position: fixed;
+    display: flex;
+    opacity: 1;
+    background: #ffffff;
+    z-index: 100;
+    border-bottom: 3px solid #333333;
+ 
+}
+
+/*for the content on the letf side of the nav bar*/
+.leftnav {
+    margin-left: 40px;
+    position: absolute;
+    top: -20px;
+}
+
+/*for the content ont he left side of the nav bar*/
+.centernav{
+    margin-top: 45px;
+    margin-left: 450px;
+    display:flex;
+    text-decoration: none;
+    list-style: none;
+  }
+
+.centernav li{
+    padding: 0px 10px;
+    
+}
+
+.centernav li a{
+    
+    justify-content: flex-start;
+    justify-content: space-evenly;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    width:25%;
+    }
+       
+      .clear-icon {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 10px;
+        cursor: pointer;
+             }
+
+    .logo{
+        margin-top: 40px;
+    }
+
+    /*for the content on the right side of the nav bar*/
+    .rightnav{
+    margin-left: 350px;
+    margin-top: 0px;
+    padding:0px 0px;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0;
+    
+        }
+
+.rightnav li input{
+padding:0px 0px;
+   align-items: center;
+}
+
+.rightnav li{
+padding: 0px 10px;
+text-decoration: none;
+color: antiquewhite;
+list-style: none;
+}
+
+.rightnav li a{
+justify-content: right;
+}
+
+/* Dropup Button */
+.dropbtn {
+background-color: #3498DB;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+/* The container <div> - needed to position the drop up content */
+.dropup {
+position: relative;
+display: inline-block;
+}
+/* Drop up content (Hidden by Default) */
+.dropup-content {
+display: none;
+position: absolute;
+bottom: -85px;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+transition: visibility 0s 5s, opacity 0.5s linear;
+}
+/* Links inside the drop up */
+.dropup-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+
+}
+/* Change color of drop up links on hover */
+.dropup-content a:hover {
+background-color: #ddd
+}
+/* Show the drop up menu on hover */
+.dropup:hover .dropup-content {
+display: block;
+visibility: visible; /* Make visible when hovered */
+opacity: 1; /* Make fully opaque when hovered */
+transition: opacity 0.5s linear; /* No delay when showing the content */
+}
+/* Change the background color of the drop up button when the drop up content is shown */
+.dropup:hover .dropbtn {
+background-color: #2980B9;
+}
+.container1 h1{
+    text-align: center;
+    position: relative;
+    top: 250px;
+    z-index: 3;
+    font-size: 60px;
+    color: #fff;
+}
+.img1{
+    position: relative;
+    top: 30px;
+}
+.click1{
+    z-index: 4;
+    position: absolute;
+    top: 600px;
+}
+/*customiing the button on top of the first image*/
+#click1 {
+    top: 330px;
+    position: absolute;
+    left:850px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: white; 
+    color: black; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 40px;
+    font-size: 13px; 
+    float: center;
+    
+  }
+  /*adds effect while hovering on the button*/
+  #click1:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  .team{
+    position:relative;
+    font-size: 35px;
+    text-align: center;
+    left: -10px;
+    top: 70px;
+    
+  }
+  .members{
+    display: flex ;
+    top: 100px;
+    margin-bottom: 75px;
+  }
+  /*card of the member*/
+  .member1 {
+    top: 100px;
+    display: flex-start;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width:350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    float: left;
+    max-height:700px ;
+    margin-bottom: 100px;
+  }
+
+ .description1 h1 {
+    font-size: 12px;
+    color: #0077b6;
+    text-align: center;
+    
+  }
+
+  .description1 p{
+    text-align: center;
+  }
+
+  .memberimage1{
+    margin-top: 0px;
+      }
+.member2{
+    top: 100px;
+    display: flex-start;
+   
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width:350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+    max-height:550px ;
+    margin-bottom: 100px;
+  }
+
+ .description2 h1 {
+    font-size: 12px;
+    color: #0077b6;
+    text-align: center;
+    
+  }
+
+  .description2 p{
+    text-align: center;
+  }
+
+  .memberimage2{
+    margin-top: 0px;
+  }
+          .member3 {
+            top: 100px;
+            display: flex-end;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            width:350px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-height:550px ;
+            margin-bottom: 100px;
+          }
+        
+         .description3 h1 {
+            font-size: 12px;
+            color: #0077b6;
+            text-align: center;
+            
+          }
+        
+          .description3 p{
+            text-align: center;
+          }
+          .memberimage3{
+            margin-top: 0px;
+          }
+      /*customizing the second row of the members*/
+      .member2{
+        top: 100px;
+        display: flex-start;
+       
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        width:350px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        
+        max-height:550px ;
+        margin-bottom: 100px;
+      }
+    
+     .description2 h1 {
+        font-size: 12px;
+        color: #0077b6;
+        text-align: center;
+        
+      }
+    
+      .description2 p{
+        text-align: center;
+      }
+    
+      .description2 h2 {
+        font-size: 30px;
+        color: #3ca95f;
+        margin-top: -5px;
+        text-align: center;
+      }
+    
+      .memberimage2{
+        margin-top: 0px;
+          }
+    
+    .description2 h3{
+        text-align: center;
+    }
+    
+
+      .members2{
+        display:flex ;
+     }
+     .member4{
+   
+    display: flex-start;
+    left: 140px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width:350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+    max-height:550px ;
+    margin-bottom: 100px;
+  }
+
+ .description4 h1 {
+    font-size: 12px;
+    color: #0077b6;
+    text-align: center;
+    
+  }
+
+  .description4 p{
+    text-align: center;
+  }
+  .memberimage4{
+    margin-top: 0px;
+  }
+          .member5 {
+            right: 140px;
+            display: flex-end;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            width:350px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-height:550px ;
+            margin-bottom: 100px;
+          }
+        
+         .description5 h1 {
+            font-size: 12px;
+            color: #0077b6;
+            text-align: center;
+            
+          }
+        
+          .description5 p{
+            text-align: center;
+          }
+
+          .memberimage5{
+            margin-top: 0px;
+              }
+          
+/* footer */
+
+/* example for flex model */
+.footer {
+  margin-top: 40px;
+  border-top: 2px solid #000;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #000;
+  padding: 2% 0%;
+}
+
+.social ul li a{
+  text-decoration: none;
+  color: #000;
+  list-style: none; 
+  
+}
+
+.footer ul {
+  list-style: none;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+/* copyright */
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1% 0%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
